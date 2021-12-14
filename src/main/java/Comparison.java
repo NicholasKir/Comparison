@@ -3,7 +3,16 @@ import org.apache.commons.lang3.time.StopWatch;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Class with main methods of comparisons.
+ */
 public class Comparison {
+    /**
+     * Check of Add-method
+     * @param list ArrayList or LinkedList
+     * @param amountOfElements number of iterations for this method
+     * @return
+     */
     public long checkAdd(List list, int amountOfElements) {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
@@ -16,7 +25,12 @@ public class Comparison {
         //return (int) (finish.getTime() - start.getTime());
         return stopWatch.getTime();
     }
-
+    /**
+     * Check of Get-method
+     * @param list ArrayList or LinkedList
+     * @param amountOfElements number of iterations for this method
+     * @return
+     */
     public long checkGet(List list, int amountOfElements) {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
@@ -26,7 +40,12 @@ public class Comparison {
         stopWatch.stop();
         return stopWatch.getTime();
     }
-
+    /**
+     * Check of Delete-method
+     * @param list ArrayList or LinkedList
+     * @param amountOfElements number of iterations for this method
+     * @return
+     */
     public long checkDelete(List list, int amountOfElements) {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
@@ -36,4 +55,5 @@ public class Comparison {
         stopWatch.stop();
         return stopWatch.getTime();
     }
+
 }
