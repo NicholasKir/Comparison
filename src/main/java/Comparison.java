@@ -9,7 +9,8 @@ import java.util.List;
 public class Comparison {
     /**
      * Check of Add-method
-     * @param list ArrayList or LinkedList
+     *
+     * @param list             ArrayList or LinkedList
      * @param amountOfElements number of iterations for this method
      * @return
      */
@@ -25,9 +26,11 @@ public class Comparison {
         //return (int) (finish.getTime() - start.getTime());
         return stopWatch.getTime();
     }
+
     /**
      * Check of Get-method
-     * @param list ArrayList or LinkedList
+     *
+     * @param list             ArrayList or LinkedList
      * @param amountOfElements number of iterations for this method
      * @return
      */
@@ -40,9 +43,11 @@ public class Comparison {
         stopWatch.stop();
         return stopWatch.getTime();
     }
+
     /**
      * Check of Delete-method
-     * @param list ArrayList or LinkedList
+     *
+     * @param list             ArrayList or LinkedList
      * @param amountOfElements number of iterations for this method
      * @return
      */
@@ -56,4 +61,13 @@ public class Comparison {
         return stopWatch.getTime();
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }
