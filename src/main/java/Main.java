@@ -42,20 +42,16 @@ public class Main {
          * Input of table with results of comparison
          */
         for(int i = 0; i < n; i++) {
-                System.out.print("For method : Add");
-                System.out.println("    |Number of elements : " + size.get(i));
-                System.out.println(" ArrayList  : " + new Comparison().checkAdd(arrayList, size.get(i)));
-                System.out.println(" LinkedList : " + new Comparison().checkAdd(linkedList, size.get(i)));
-
-                System.out.print("For method : Get ");
-                System.out.println("   |Number of elements : " + size.get(i));
-                System.out.println(" ArrayList  : " + new Comparison().checkGet(arrayList, size.get(i)));
-                System.out.println(" LinkedList : " + new Comparison().checkGet(linkedList, size.get(i)));
-
-                System.out.print("For method : Delete ");
-                System.out.println("|Number of elements : " + size.get(i));
-                System.out.println(" ArrayList  : " + new Comparison().checkDelete(arrayList, size.get(i)));
-                System.out.println(" LinkedList : " + new Comparison().checkDelete(linkedList, size.get(i)));
+                System.out.println("Number of elements : " + size.get(i));
+            System.out.println("-----------------------------------");
+                System.out.println("| Method | ArrayList | LinkedList  ");
+                System.out.println("----------------------------------");
+                System.out.println("| Add    | "+ new Comparison().checkAdd(arrayList, size.get(i)) + "         |" + new Comparison().checkAdd(linkedList, size.get(i)));
+            System.out.println("----------------------------------");
+                System.out.println("| Get    | "+ new Comparison().checkGet(arrayList, size.get(i)) + "         |" + new Comparison().checkGet(linkedList, size.get(i)));
+            System.out.println("----------------------------------");
+                System.out.println("| Delete | "+ new Comparison().checkDelete(arrayList, size.get(i)) + "         |" + new Comparison().checkDelete(linkedList, size.get(i)));
+            System.out.println("----------------------------------");
             }
     }
 
