@@ -19,7 +19,7 @@ public class Main {
         while(true) {
             String k= in.next();
             if (isDigit(k)){
-                if(Integer.parseInt(k)<0) System.out.println("Incorrect type!");
+                if(Integer.parseInt(k)<=0) System.out.println("Incorrect input!");
                 else{n=Integer.parseInt(k);
                     break;}
             }
@@ -30,7 +30,7 @@ public class Main {
             while(true) {
                 String k= in.next();
                 if (isDigit(k)){
-                    if(Integer.parseInt(k)<0) System.out.println("Incorrect type!");
+                    if(Integer.parseInt(k)<=0) System.out.println("Incorrect input!");
                     else{newsize=Integer.parseInt(k);
                         break;}
                 }
